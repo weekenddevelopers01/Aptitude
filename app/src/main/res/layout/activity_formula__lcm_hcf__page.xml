@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:orientation="vertical"
+    tools:context=".Formula_LcmHcf_Page">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="வகுத்தி (Factors):"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tX என்ற எண் Y என்ற எண்ணால் மீதியின்றி வகுப்படுமானால் (அதாவது மீதி 0 வருமாயின் ),X -ன் வகுத்தி Y ஆகும்."
+            android:textColor="@color/D_Green"
+            android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView144"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/factor_lcmhcf_factors"
+        android:textColor="@color/D_Green"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="மடங்கு (Multiples):"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tமேற்கண்ட உதாரணத்தின் மூலம் 3-ன் மடங்கு 9- என கூறலாம் ,"
+            android:textColor="@color/D_Green"
+            android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView145"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/textView32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/factor_lcmhcf_multiples"
+        android:textColor="@color/D_Green"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="மீ.பொ.வ (HCF):"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tஇரண்டு அல்லது அதற்க்கு மேற்பட்ட எண்களின் மீ.பொ.வ என்பது அந்த எண்களின் மிக பெரிய பொது வகுத்தியாக இருக்கவேண்டும்."
+            android:textColor="@color/D_Green"
+            android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView146"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/textView35"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lcmhcf_hcf_2content"
+        android:textColor="@color/D_Green"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\t\t\t\tமீ .பொ.வ- காரணி முறை (Factorization method), வகுத்தி முறை  (Division method) ஆகிய முறைகளில் காணலாம், அவை உதாரணம்  என்ற பிரிவில் கூறப்பட்டுள்ளன."
+        android:textColor="@color/D_Green"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="மீ .சி .ம (LCM):"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\t\t\t\tஇரண்டு அல்லது அதற்க்கு மேற்பட்ட எண்களின் மீ.சி.ம என்பது அந்த எண்கள் வகுக்கக்கூடிய மிகச்சிறிய எண் ஆகும் ."
+        android:textColor="@color/D_Green"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView142"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/textView50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lcmhcf_lcm_2content"
+        android:textColor="@color/D_Green"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\t\t\t\tமீ .சி .ம- காரணி முறை (Factorization method),பொது  வகுத்தி முறை  (Common Division method) ஆகிய முறைகளில் காணலாம், அவை உதாரணம்  என்ற பிரிவில் கூறப்பட்டுள்ளன."
+        android:textColor="@color/D_Green"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView68"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="தசம எண்களின்  மீ .பொ.வ  மீ .சி .ம : "
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tகொடுக்கப்பட்ட எண்களின் தசம மதிப்பை (புள்ளிக்கு அடுத்துவரும் எண்களை) சமன்செய்தபின் மீ .பொ.வ , மீ .சி .ம காண்பது எளிது ."
+            android:textColor="@color/D_Green"
+            android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView143"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lcmhcf_factionlcmhcf_2content"
+            android:textColor="@color/D_Green"
+            android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView75"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="பின்னங்களை ஒப்பிடுதல் (Compare fractions):"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView76"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tஇரு பின்னங்களை ஒப்பிடுவதற்கு அதன் பகுதிக்கு  (கீழுள்ள எண் ) மீ .சி .ம கண்டுபிடித்து அதனை இரு பின்னகளின் பகுதி, தொகுதிகளில் பெருக்க எளிதாக ஒப்பிடலம் ."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lcmhcf_comparefraction_2content"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-5376812679381678/1065768227"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

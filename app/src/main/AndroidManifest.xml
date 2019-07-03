@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.weekenddevelopers.tamilaptitude">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_new_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash_Screen">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Rate_Page"
+            android:label="Rate Us"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Share_Page"
+            android:label="Share"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Policy_Page"
+            android:label="Privacy Policy"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Feedback_Page"
+            android:label="Feedback"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".About_Page"
+            android:label="About"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Test_Quiz_Page"
+            android:label="Test"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".Hint_PopUP_Page"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".Example_SimpleInterest_Page"
+            android:label="தனிவட்டி (Simple interest)"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Example_TimeWork_Page"
+            android:label="நேரம்,வேலை (Time and work)"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Example_TimeDistance_Page"
+            android:label="நேரம்,தூரம்(Time and Distance)"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Example_ProfitLoss_Page"
+            android:label="லாபம்-நட்டம் (Profit-Loss)"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Example_Percentage_Page"
+            android:label="சதவீதம்(Percentage)"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Example_Average_Page"
+            android:label="சராசரி(Average)"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Example_Simplification_Page"
+            android:label="சுருக்கங்கள்(Simplification)"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Example_Decimal_Page"
+            android:label="தசம பின்னம்(Decimal fraction)"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Example_LcmHcf_Page"
+            android:label="மீ.சி.ம(LCM),மீ.பொ.வ (HCF)"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Example_Number_Page"
+            android:label="@string/number_title"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Result_Page"
+            android:label="Result"
+            android:screenOrientation="userPortrait"
+            />
+        <activity android:name=".Practice_Quiz_Page"
+            android:label="Practice"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="userPortrait"
+            />
+        <activity
+            android:name=".Formula_SimpleInterest_Page"
+            android:configChanges="orientation"
+            android:label="தனிவட்டி (Simple interest)"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".Formula_TimeWork_Page"
+            android:configChanges="orientation"
+            android:label="நேரம்,வேலை (Time and work)"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".Formula_TimeDistance_Page"
+            android:configChanges="orientation"
+            android:label="நேரம்,தூரம்(Time and Distance)"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".Formula_ProfitLoss_Page"
+            android:configChanges="orientation"
+            android:label="லாபம்-நட்டம் (Profit-Loss)"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".Formula_Percentage_Page"
+            android:configChanges="orientation"
+            android:label="சதவீதம்(Percentage)"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".Formula_Average_Page"
+            android:configChanges="orientation"
+            android:label="சராசரி(Average)"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".Formula_Simplification"
+            android:configChanges="orientation"
+            android:label="சுருக்கங்கள்(Simplification)"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".Formula_DecimalFraction_Page"
+            android:configChanges="orientation"
+            android:label="தசம பின்னம்(Decimal fraction)"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".Formula_LcmHcf_Page"
+            android:configChanges="orientation"
+            android:label="மீ.சி.ம(LCM),மீ.பொ.வ (HCF)"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".Formula_Number_Page"
+            android:configChanges="orientation"
+            android:label="@string/number_title"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".Test_Home_Page"
+            android:configChanges="orientation"
+            android:label="தேர்வு (Test)"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".Practice_Home_Page"
+            android:configChanges="orientation"
+            android:label="பயிற்சி (Practice)"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".Formula_Home_Page"
+            android:configChanges="orientation"
+            android:label="@string/formula_title"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".Example_Home_Page"
+            android:configChanges="orientation"
+            android:label="உதாரணம் (Example)"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5376812679381678~6509200003" />
+
+        <receiver android:name=".BroadcastReciver.AlarmReciver" />
+    </application>
+
+</manifest>

@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Formula_Number_Page">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="வகைகள் : "
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/number_type_content"
+            android:textColor="@color/D_Green"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="இரட்டைப்படை எண்கள் (Even number):"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/number_evennumber_content"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_primary_dark" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t2, 4, 6, 8, 10, 12.......... "
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ஒற்றைப்படை எண்கள் (Odd number):"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t2-ஆல் மீதியின்றி வகுப்படாத எண்கள் .(தசம மதிப்பு வராமல் முழுமையாக வகுப்படும் )"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_primary_dark" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t1 , 3, 5, 7, 9, 11..............."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="பகு எண்கள் (Non prime number or Composite):"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tஒரு எண் இரண்டிற்கு மேற்பட்ட வகுத்திகளை(வாய்ப்பாடு ) கொண்டிருப்பின் அது பகு எண்."
+            android:textColor="@color/D_Green" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_primary_dark" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t16 என்ற எண்ணிற்கு 1x16=16, 2x8=16, 4x4=16, 8x2=16 , 16x1=16 இரண்டிற்கு மேற்பட்ட வகுத்தி உள்ளன."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="பகா எண்கள் (Prime number):"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tஒரு எண்ணிற்கு வெறும் இரண்டு வகுத்தி அல்லது அதற்கு குறைவாக  இருப்பின் அது பகா எண் ."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_primary_dark" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t17 என்ற எண்ணிற்கு 1x17=17, 17x1=17 ஆகிய இரண்டு வகுத்தி (வாய்ப்பாடு) மட்டும் உள்ளன."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 முதல் 100 வரையிலான பகா எண்கள் : 	"
+            android:textColor="@color/design_default_color_primary_dark" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t2 ,3 ,5 ,7 ,11 ,13 ,17 ,19 ,23 ,29 ,31 ,37 ,41 ,43 ,53 ,59 ,61 ,67 ,71 ,73 ,79 ,83 ,97"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எளிய வகுத்தி முறை :"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2- ஆல் வகுப்படக்கூடிய எண் :"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tஇரண்டால் வகுப்பட கூடிய எண்கள் பின்வரும் எண்களை கடைசி இலக்கமாக கொண்டிருக்கும் 0,2,4,6,8."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView147"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/easy_divideby2_2content"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3- ஆல் வகுப்படக்கூடிய எண் : "
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t3- ஆல் வகுப்படும் எண்களை கண்டறிய அந்த எண்ணின்  அனைத்து இலக்கங்களையும் கூட்டி வரும் எண்ணை 3-ஆல் வகுக்க வேண்டும் ."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/easy_divideby3_2content"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t12836 -> 1+2+8+3+6=19 , 19 மூன்றால் வகுப்படாது"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4- ஆல் வகுப்படக்கூடிய எண் :"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t4- ஆல் வகுப்படும் எண்களை கண்டறிய அந்த எண்ணின் கடைசி இரண்டு இலக்கங்களை மட்டும் 4-ஆல் வகுப்படுமா என சோதித்தால் போதும்"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/easy_divideby4_2content"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t12831->  இதில் கடைசி இரண்டு இலக்கங்கள் 31 ஆகும். 31 என்ற எண் 4-ஆல் வகுப்படாது ."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5- ஆல் வகுப்படக்கூடிய எண் :"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t5-ஆல்  வகுப்படும் எண்கள் கடைசி இலக்கமாக 0 அல்லது 5 கொண்டிருக்கும் ."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/easy_divideby5_2content"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8- ஆல் வகுப்படக்கூடிய எண் :"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t8-ஆல் வகுப்படக்கூடி எண்களின் கடைசி 3 இலக்கங்கள் 8-ஆல் வகுப்படுமாயின், அந்த எண் 8-ஆல் வகுப்படும்."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/easy_divideby8_2content"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9-  ஆல் வகுப்படக்கூடிய எண் :"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tஒரு எண்ணின் அனைத்து இலக்கங்களின் கூடுதல் 9-ஆல் வகுப்பட்டால் அந்த எண் 9-ஆல் வகுப்படும்."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/easy_divideby9_2content"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10- ஆல் வகுப்படக்கூடிய எண் :"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tஒரு  எண்ணின் கடைசி இலக்கம் 0 ஆக இருப்பின் அது 10 ஆல் வகுப்படும்."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/easy_divideby10_2content"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11- ஆல் வகுப்படக்கூடிய எண் :"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tஒரு எண்ணின் ஒற்றைப்படை இலக்கங்களின் கூடுதல் மற்றும் இரட்டைப்படை இலக்கங்களின் கூடுதல் ,இவ்விரண்டின் வேறுபாடு 0அல்லது 11 வருமாயின் அது 11-ஆல் வகுப்படும் ."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t(பின்னிருந்து ஒற்றைப்படை இலக்கங்களின் கூடுதல்)-(பின்னிருந்து இரட்டைப்படை இலக்கங்களின் கூடுதல்)"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="எ.கா:"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/easy_divideby11_2content"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tபின்னிருந்து ஒற்றைப்படை இலக்கங்களின் கூடுதல்->(8+4+3+9) = 24"
+            android:textColor="@color/D_Green" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tபின்னிருந்து இரட்டைப்படை இலக்கங்களின் கூடுதல்-> (2+5+4+2)=13"
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t24-13=11, ஆக 29435428,  11-ஆல் வகுப்படும்."
+            android:textColor="@color/D_Green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-5376812679381678/1065768227"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

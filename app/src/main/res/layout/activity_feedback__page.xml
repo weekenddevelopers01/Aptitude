@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".Feedback_Page">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/follow_c1"
+        android:layout_height="wrap_content"
+        android:text="We welcome your feedbacks to develop the App further, keep support us:"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/follow_c2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/follow_c1"
+        android:text="Rate us on :"
+        android:textColor="@color/D_Green"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/follow_c3"
+        android:layout_below="@+id/follow_c2"
+        android:layout_width="wrap_content"
+        android:onClick="onclickplaysotre"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/play_store_icon" />
+
+    <TextView
+        android:id="@+id/follow_c4"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/follow_c3"
+        android:text="Follow us on :"
+        android:textColor="@color/D_Green"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:onClick="onclickfacebook"
+        android:layout_below="@id/follow_c4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/facebook_logo" />
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="5dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="5dp"
+    tools:context=".Practice_Quiz_Page">
+
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_below="@id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Score : 0"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/text_view_question_count"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/adView"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Question : 1/X"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_confirm_next">
+
+        <RadioButton
+            android:id="@+id/rb_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/c1"
+            android:text="  option1"
+            android:textColor="@android:color/background_light"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/rb_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/c2"
+            android:text="  option2"
+            android:textColor="@android:color/background_light"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/rb_option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/c1"
+            android:text="  option3"
+            android:textColor="@android:color/background_light"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/rb_option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c2"
+            android:text="  option4"
+            android:textColor="@android:color/background_light"
+            android:textSize="16dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_view_tamil_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radio_group_option"
+        android:layout_below="@id/text_view_english_question"
+        android:layout_marginBottom="14dp"
+        android:text="தமிழ் மொழி (Tamil language) தமிழர்களினதும், தமிழ் பேசும் பலரதும் தாய்மொழி ஆகும். தமிழ் திராவிட மொழிக் குடும்பத்தின் முதன்மையான மொழிகளில் ஒன்றும் செம்மொழியும் ஆகும். "
+        android:textColor="@color/D_Green" />
+
+    <TextView
+        android:id="@+id/text_view_english_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_score"
+        android:layout_marginBottom="10dp"
+        android:text="English is a West Germanic language that was first spoken in early medieval England and eventually became a global lingua franca.[4][5] It is named after the Angles, one of the Germanic tribes that migrated to the area of Great Britain that later took their name, as England."
+        android:textColor="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/btn_confirm_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_view_timmer"
+        android:layout_marginTop="10dp"
+        android:text="Confirm"
+        android:textSize="14dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_confirm_next"
+        android:layout_alignParentRight="true"
+        android:onClick="onexitclick"
+        android:text="Exit" />
+
+    <TextView
+        android:id="@+id/text_view_timmer"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="00:00"
+        android:textSize="30dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-5376812679381678/1065768227"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

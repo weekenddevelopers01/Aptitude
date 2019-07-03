@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/white_bg"
+    android:layout_height="match_parent"
+    tools:context=".Splash_Screen">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/thirukural"
+        android:src="@mipmap/thirukural"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/weekendlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textview_one"
+        android:layout_centerHorizontal="true"
+        android:alpha="0"
+        android:src="@mipmap/weekenddeveloperslogo" />
+
+    <TextView
+        android:id="@+id/textview_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:alpha="0"
+        android:text="Presents"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_one"
+        android:layout_centerHorizontal="true"
+        android:alpha="0"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_logo"
+        android:layout_centerHorizontal="true"
+        android:alpha="0"
+        android:text="Tamil Aptitude"
+        android:textSize="20sp" />
+
+</RelativeLayout>
