@@ -2,9 +2,10 @@ package com.weekenddevelopers.tamilaptitude;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Feedback_Page extends AppCompatActivity {
 

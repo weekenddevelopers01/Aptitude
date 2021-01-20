@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formula_Train_Page">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/formula_train_2_0"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="         i) 1  மீட்டர் நீளமுள்ள ரயில் ஒரு கம்பம் அல்லது ஒரு நபரை கடந்து செல்லும் நேரம், அந்த ரயில் 1 மீட்டர் கடந்து செல்ல எடுக்கும் நேரத்திற்கு சமம்"
+        android:textColor="@color/D_Green"
+        android:textSize="14sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="          ii) 1  மீட்டர் நீளமுள்ள ரயில் ஒரு x நீளமுள்ள  இடத்தையோ, பாலத்தையோ கடக்கும் தொலைவு (1+x )மீட்டர் தொலைவை அந்த ரயில் கடப்பதற்கு சமம்."
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary_dark" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="         iii)இரு ரயில் அல்லது பொருள் ஒரே திசையில் x  m/s  மற்றும் y   m/s வேகத்தில் சென்றால் அவற்றின் தொடர்பு வேகம் = (x - y)m/s (when x>y) "
+            android:textColor="@color/D_Green"
+            android:textSize="14sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="          iv) இரு ரயில் அல்லது பொருள் எதிர் திசையில் x  m/s  மற்றும் y   m/s வேகத்தில் சென்றால் அவற்றின் தொடர்பு வேகம் = (x + y)m/s"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_primary_dark" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="         v) இரு ரயில்கள் A, B எதிர் திசையில் x  m/s  மற்றும் y   m/s வேகத்தில் சென்றால் அவை இரண்டும் ஒன்றை ஒன்று கடக்க எடுக்கும் நேரம் = (A+B)/(x+y) sec"
+            android:textColor="@color/D_Green"
+            android:textSize="14sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="          vi) இரு ரயில்கள் A, B ஒரே திசையில் x  m/s  மற்றும் y   m/s வேகத்தில் சென்றால் அவை இரண்டும் ஒன்றை ஒன்று கடக்க எடுக்கும் நேரம் = (A+B)/(x-y) sec "
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_primary_dark" />
+
+    </LinearLayout>
+    </ScrollView>
+
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

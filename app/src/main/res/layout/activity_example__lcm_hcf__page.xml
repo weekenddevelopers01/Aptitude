@@ -16,7 +16,7 @@
         android:layout_marginRight="5dp"
         android:layout_marginLeft="5dp"
         android:layout_height="wrap_content">
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -51,9 +51,9 @@
                 android:layout_height="match_parent"
                 app:srcCompat="@mipmap/lcmhcf_exm_one" />
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -87,8 +87,8 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@mipmap/lcmhcf_exm_two" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -122,8 +122,8 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@mipmap/lcmhcf_exm_three" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -157,8 +157,8 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@mipmap/lcmhcf_exm_four" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -193,21 +193,231 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@mipmap/lcmhcf_exm_five" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="6.Find the HCF of  2/3, 8/9, 16/81 and  10/27"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="மீ. பொ. வ காண்க 2/3, 8/9, 16/81   10/27"
+                    android:textColor="@color/D_Green"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/lcmhcf_exm_2_0" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="7.The Traffic Lights at three different road crossings change after every 48 sec, 72 sec and 108 sec especially. If they all changes simultaneously at 8 : 20 : 00 hours, then at what time will they again change simultaneously?"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="போக்குவரத்து சமிக்ஞ்சை விளக்குகள் மூன்று வெவ்வேறு சாலைச் சந்திப்புகளில் முறையே ஒவ்வொரு 48 வினாடிகள், 72 வினாடிகள் மற்றும் 108 விநாடிகளுக்குப் பின் மாறுகிறது. அவை எல்லாமே 8 : 20 :00 மணிகளில் ஒரே நேரத்தில் மாறினால், மீண்டும் எப்போது அவை ஒரே நேரத்தில் மாறும்?"
+                android:textColor="@color/D_Green"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/lcmhcf_exm_2_1" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="8.Find the GCD of 15x^4 y^3 z^5 , 12x^2 y^7 z^2"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="மீப்பெரு பொது வகுத்தி காண்க 15x^4 y^3 z^5 , 12x^2 y^7 z^2"
+                    android:textColor="@color/D_Green"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/lcmhcf_exm_2_2" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="9.If the product of two number is 800 and their LCM is 200, then the HCF is"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="இரு மிகை எண்களின் பெருக்கு தொகை 800 மற்றும் அவற்றின் LCM 200 எனில் HCF-ன் மதிப்பு யாது?"
+                    android:textColor="@color/D_Green"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/lcmhcf_exm_2_3" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="10.Find the least number exactly divisible by 12, 15, 20 and 27"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="12, 15, 20 மற்றும் 27 ஆகிய எண்களால் வகுபடும் மிகச் சிறிய எண்ணை காண்க?"
+                    android:textColor="@color/D_Green"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/lcmhcf_exm_2_4" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="11.The numbers are in the ratio 15 : 11. Their HCF is 13, which of the following pairs can they be?"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="இரண்டு எண்கள் 15:11 என்ற விகிதத்தில் உள்ளன. அவற்றின் மீ.பொ.வ 13 எனில் கீழே கொடுக்கப்பட்டுள்ளவைகளில் அவை எதுவாக இருக்கக் கூடும்?"
+                    android:textColor="@color/D_Green"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/lcmhcf_exm_2_5" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
         <Space
             android:layout_width="match_parent"
             android:layout_height="100dp" />
 
     </LinearLayout>
     </ScrollView>
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
-        app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-5376812679381678/1065768227"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
 
 </RelativeLayout>

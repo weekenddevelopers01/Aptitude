@@ -1,15 +1,17 @@
 package com.weekenddevelopers.tamilaptitude;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
+import com.mopub.mobileads.MoPubErrorCode;
+import com.mopub.mobileads.MoPubInterstitial;
+import com.weekenddevelopers.tamilaptitude.BroadcastReciver.Initialize_InterstitialAd;
 
-public class Result_Page extends AppCompatActivity {
+
+public class Result_Page extends AppCompatActivity implements MoPubInterstitial.InterstitialAdListener   {
 
     private TextView textView_total;
     private TextView textView_right;
@@ -18,6 +20,8 @@ public class Result_Page extends AppCompatActivity {
     private int total;
     private int right;
     private int wrong;
+
+    private MoPubInterstitial mInterstitial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,28 +39,60 @@ public class Result_Page extends AppCompatActivity {
         textView_total.setText("Total  : "+total);
         textView_right.setText("Right  : "+right);
         textView_wrong.setText("Wrong  : "+wrong);
-        interstitialAd = new InterstitialAd(this);
-        interstitialAd.setAdUnitId("ca-app-pub-5376812679381678/7565640113");
-        interstitialAd.loadAd(new AdRequest.Builder().build());
 
-        interstitialAd.setAdListener(new AdListener() {
-                                         @Override
-                                         public void onAdLoaded() {
+        mInterstitial = new MoPubInterstitial(this,"15e8b06031d4497daf8d5b5f0099ffef");
+        mInterstitial.setInterstitialAdListener(this);
+        Initialize_InterstitialAd interstitialAd = new Initialize_InterstitialAd(this);
+        interstitialAd.initializeSDK();
 
-                                             if (interstitialAd.isLoaded()) {
-                                                 interstitialAd.show();
-                                             }
-
-                                         }});
 
     }
 
-    InterstitialAd interstitialAd;
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mInterstitial.load();
+    }
 
     @Override
     public void onBackPressed() {
 
         finish();
 
+    }
+
+    @Override
+    public void onInterstitialLoaded(MoPubInterstitial interstitial) {
+        yourAppsShowInterstitialMethod();
+    }
+
+    @Override
+    public void onInterstitialFailed(MoPubInterstitial interstitial, MoPubErrorCode errorCode) {
+
+    }
+
+    @Override
+    public void onInterstitialShown(MoPubInterstitial interstitial) {
+
+    }
+
+    @Override
+    public void onInterstitialClicked(MoPubInterstitial interstitial) {
+
+    }
+
+    @Override
+    public void onInterstitialDismissed(MoPubInterstitial interstitial) {
+
+    }
+
+    void yourAppsShowInterstitialMethod() {
+        if (mInterstitial.isReady()) {
+            mInterstitial.show();
+        } else {
+            Toast.makeText(this, "NOt ready", Toast.LENGTH_SHORT).show();
+            // Caching is likely already in progress if `isReady()` is false.
+            // Avoid calling `load()` here and instead rely on the callbacks as suggested below.
+        }
     }
 }

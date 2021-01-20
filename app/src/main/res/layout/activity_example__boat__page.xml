@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Example_Boat_Page">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="1.A man can row upstream at 7 kmph and downstream at 10kmph.find man’s rate in still water and the rate of current"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="ஒரு நபர் 7kmph எதிர்நிலை நிரோட்டத்திலும், 10kmph வேகத்தில் நேர்நிலை நீரோட்டத்திலும் செல்கிறார் எனில், நீரில் அவரின் வேகம் மற்றும் நீரோட்டத்தின் வேகம் காண்க."
+                        android:textColor="@color/D_Green"
+                        android:textSize="18dp" />
+
+
+
+                    <ImageView
+                        android:id="@+id/imageView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/exam_boat_2_0" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="2. A man takes 3 hours 45 minutes to row a boat 15 km downstream of a river and 2hours30minutes to cover a distance of 5km upstream. find the speed of the river current in km/hr."
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="ஒரு நபர் 15km நேர்நிலை  நீரோட்டத்தை 3மணிநேரம் 45நிமிடத்திலும், 5km எதிர்நிலை நீரோட்டத்தை 2மணிநேரம் 30நிமிடங்களில் கடக்கிறார் எனில் நீரோட்டத்தின் வேகம் என்ன ?"
+                        android:textColor="@color/D_Green"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/exam_boat_2_1" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="3: there is a road beside a river.two friends started from a place A,moved to a temple situated at another place B and then returned to A again.one of them moves on a cycle at a speed of 12 km/hr,while the other sails on a boat at a speed of 10 km/hr.if the river flows at the speed of 4 km/hr,which of the two friends will return to placeA first?"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="சாலையின் அருகில் ஆறு உள்ளது.இரு நண்பர்கள் A என்ற இடத்தில் B என்ற இடத்தில் உள்ள கோவிலுக்கு சென்று திரும்புகின்றனர், அதில் ஒருவர் மிதிவண்டியில் 12km/hr வேகத்தில் செல்கிறார். மற்றொருவர் படகில் 10km/hr வேகத்தில் செல்கிறார், ஆற்றில் நீரின் வேகம் 4km/hr எனில் இருவரில் யார் முதலில் A என்ற இடத்தை திருப்பி வந்தடைவர்?"
+                        android:textColor="@color/D_Green"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/exam_boat_2_2" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="4: A man can row 7 ½ kmph in still water.if in a river running at 1.5 km/hr anhour,it takes him 50 minutes to row to a place and back,how far off is the place?"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="ஒரு நபர் 7 ½ kmph வேகத்தில் நீரில் செல்கிறார், ஆற்றில் நீரின் வேகம் 1.5 km/hr எனில் அவர் 50நிமிடத்தில் ஒரு இடத்திற்கு சென்று வருகிறார். எனில் அந்த இடம் உள்ள தொலைவு என்ன?"
+                        android:textColor="@color/D_Green"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/exam_boat_2_3" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="5:In a stream running at 2kmph,a motar boat goes 6km upstream and back again to the starting point in 33 minutes.find the speed of the motarboat in still water."
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="நீரோடையின் வேகம் 2kmph, ஒரு இயந்திர படகு எதிர் நிலை நீரோட்டத்தில் 6km சென்று மீண்டும் ஆரம்ப இடத்திற்கு வருகிறது எனில் இயந்திர படகின் வேகம் என்ன ?"
+                        android:textColor="@color/D_Green"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/exam_boat_2_4" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

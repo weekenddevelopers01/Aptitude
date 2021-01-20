@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formula_Compound_Page">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="கூட்டு வட்டி : "
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="கூட்டு வட்டி என்பது ஒரு குறிப்பிட்ட அசலுக்கு குறிப்பிட்ட காலத்தில் வரும் தனிவட்டி மீண்டும் அசலுடன் சேர்ந்து அந்த அசலுக்கு வட்டி கணக்கிடப்படும்."
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ex; 100Rs அசலுக்கு 1 வருடத்தில் 10Rs தனிவட்டி வருகிறது, ஆக தற்போது அசல் (100+10) 110Rs, அடுத்த ஆண்டு இந்த அசலுக்கு தனிவட்டி 11Rs மீண்டும் அது அசலுடன் சேர்க்கப்படும் 110+11 = 121Rs "
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="அசல் = P, வட்டி = R , ஆண்டு = N  என்க"
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="கூட்டு வட்டி ஆண்டுக்கு(yearly ) என்றால் "
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/formula_comp_2_0"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="கூட்டு வட்டி அரை ஆண்டுக்கு(Half- yearly) என்றால்"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/formula_comp_2_1"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="கூட்டு வட்டி கால் ஆண்டுக்கு(Quarterly) என்றால் "
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/formula_comp_2_2"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="கூட்டு வட்டி முழுமையில்லா ஆண்டுக்கு(fraction) என்றால்"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Example : இரண்டரை ஆண்டு (2(1/2)) என்றால் "
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/formula_comp_2_3"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ஒவ்வொறு ஆண்டும் தனிவட்டி மாறுகிறது என்றால், அதாவது முதல் ஆண்டு R1%, இரண்டாம் ஆண்டு R2%, மூன்றாம் ஆண்டு R3% எனில் "
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/formula_comp_2_4"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </ScrollView>
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

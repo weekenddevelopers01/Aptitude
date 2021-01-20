@@ -16,7 +16,7 @@
         android:layout_marginRight="5dp"
         android:layout_marginLeft="5dp"
         android:layout_height="wrap_content">
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -51,9 +51,9 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@mipmap/decimal_exm_one" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -87,9 +87,9 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@mipmap/decimal_exm_three" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -123,9 +123,9 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@mipmap/decimal_exm_two" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -159,8 +159,8 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@mipmap/decimal_exm_four" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -187,21 +187,20 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@mipmap/decimal_exm_five" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
         <Space
             android:layout_width="match_parent"
             android:layout_height="100dp" />
 
     </LinearLayout>
     </ScrollView>
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
-        app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-5376812679381678/1065768227"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
 
 </RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formula_Pipe_page">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="உள்ளீடு : "
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         ஒரு பாத்திரம் அல்லது தொட்டியை நிரப்ப அதனுடன் இணைக்கப்பட்ட குழாய், உள்ளீடு ஆகும்."
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="வெளியிடு : "
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="                  i) ஒரு குழாய் ஒரு தொட்டியை நிரப்ப x மணிநேரம் எடுத்துக்கொள்கிறது எனில், 1மணிநேரத்தில் செய்யும் வேலை = 1/x
+"
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ex: ஒரு குழாய் ஒரு தொட்டியை நிரப்ப எடுத்துக்கொள்ளும் நேரம் 5 எனில், 1மணிநேரத்தில் செய்யும் வேலை = 1/5"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         ii) ஒரு குழாய் ஒரு தொட்டியை காலிசெய்ய y மணிநேரம் எடுத்துக்கொள்கிறது எனில், 1மணிநேரத்தில் செய்யும் வேலை = 1/y"
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ex: ஒரு குழாய் ஒரு தொட்டியை காலிசெய்ய எடுத்துக்கொள்ளும் நேரம் 12 எனில், 1மணிநேரத்தில் செய்யும் வேலை = 1/12"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ஒரு குழாய் தொட்டியை நிரப்புகிறது மற்றோரு குழாய் அதனை காலி செய்கிறது என்க, இதில் உள்ளீடு x, வெளியிடு y "
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="if(x>y) உள்ளீடு ஆனது, வெளியிடு ஐ விட அதிகம் என்றால் அது ஒரு மணிநேரத்தில் செய்யும் வேலை"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/formula_2_0"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="if(x(less than)y) உள்ளீடு ஆனது, வெளியிடு ஐ விட அதிகம் என்றால் அது ஒரு மணிநேரத்தில் செய்யும் வேலை"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/formula_2_1"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

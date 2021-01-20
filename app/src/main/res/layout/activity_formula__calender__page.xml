@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formula_Calender_Page">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 வருடம் (year)  = 365 நாள் \n1 வருடம் (year)  = 52 வாரம் + 1 நாள் \n 1 வாரம்  (week) = 7 நாட்கள்  "
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="லீப் வருடம்(leap year) : "
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="லீப் வருடம் 366 நாட்கள் கொண்டிருக்கும்."
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="சாதாரண வருடம் (ordinary year) : "
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="சாதாரண வருடங்கள் 365 நாட்கள் கொண்டிருக்கும்."
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Odd Days : "
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="முழுமையான வாரத்திற்கு அதிகமான நாட்கள் odds days ஆகும்."
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leap Year: "
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="எந்த ஒரு வருடம்  4ஆல் முழுமையாக வகுப்படுமோ அது leap year ஆகும்"
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exmple : 2004,2000,1996,2020 முதலியவை  4ஆல் முழுமையாக வகுப்படும் ஆக இது leap year ஆகும் \n           எல்ல நூற்றாண்டுகளுக்கு leap year அல்ல. ஒவ்வொரு 4ம் நூற்றாண்டு leap year ஆகும்"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Odd Days கணக்கிடுதல்:"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="              i)எந்த ஒரு வருடம்  4ஆல் முழுமையாக வகுப்படுமோ அது leap year ஆகும்"
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="              ii)1 leap year = 366 days = (52 வாரம் + 2 நாள்)  |  லீப் வருடம் 2 Odd Days கொண்டுள்ளது."
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="              iii)100 years = 76 ordinary years + 24 leap years \n  = [(76 x 52) வாரம்+ 76 நாட்கள்) + [(24 x 52) வாரம்+ 48 நாட்கள்] \n  = 5200 வாரம்+ 124 நாட்கள்= (5217 வாரம்+ 5 நாட்கள்).  "
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1) 100வருடங்கள் 5odd days கொண்டு இருக்கும், ஆக "
+                android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="14sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2) 200 வருடங்கள் = 10odd days => இதில் ஒரு வாரம் முழுமையாக வருகிறது ஆக odd days= 3"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3) 300 வருடங்கள் = 15odd days => இதில் இரு வாரம் முழுமையாக வருகிறது ஆக odd days= 1"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4) 400 வருடங்கள் = 21 => odd days = 0"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/formula_cal_2_0"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

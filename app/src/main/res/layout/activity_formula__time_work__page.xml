@@ -78,12 +78,11 @@
             android:textColor="@color/D_Green" />
     </LinearLayout>
     </ScrollView>
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
-        app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-5376812679381678/1065768227"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>

@@ -11,6 +11,17 @@ public class Practice_Question {
     public static final String CATEGORY_TIMEDISTANCE="timedistance";
     public static final String CATEGORY_TIMEWORK="timework";
     public static final String CATEGORY_SIMPLEINTEREST="simpleinterest";
+    public static final String CATEGORY_AREA="area";
+    public static final String CATEGORY_VOLUMES="volumes";
+    public static final String CATEGORY_COMPOUNDINTEREST="compoundinterest";
+    public static final String CATEGORY_RATIO="ratio";
+    public static final String CATEGORY_AGES="problemonages";
+    public static final String CATEGORY_PIPE="pipe";
+    public static final String CATEGORY_TRAINS="problemontrain";
+    public static final String CATEGORY_BOAT="boat";
+    public static final String CATEGORY_MIXTURE="mixture";
+    public static final String CATEGORY_CALENDER="calender";
+    public static final String CATEGORY_HEIGHTANDDISTANCE="heightanddistance";
 
     private String question_tamil;
     private String question_english;
@@ -112,7 +123,9 @@ public class Practice_Question {
         return new String[]{
                 CATEGORY_NUMBERS,CATEGORY_LCMHCF,CATEGORY_DECIMAL,CATEGORY_SIMPLIFICATION,CATEGORY_AVERAGE,CATEGORY_PERCENTAGE,CATEGORY_PROFITLOSS,
                 CATEGORY_TIMEDISTANCE,
-                CATEGORY_TIMEWORK,CATEGORY_SIMPLEINTEREST
+                CATEGORY_TIMEWORK,CATEGORY_SIMPLEINTEREST,CATEGORY_AREA,CATEGORY_VOLUMES,CATEGORY_AGES,CATEGORY_BOAT,
+                CATEGORY_CALENDER,CATEGORY_COMPOUNDINTEREST,CATEGORY_HEIGHTANDDISTANCE,CATEGORY_MIXTURE,CATEGORY_PIPE
+                ,CATEGORY_RATIO,CATEGORY_TRAINS
         };
     }
 }

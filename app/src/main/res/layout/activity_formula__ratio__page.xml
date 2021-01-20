@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formula_Ratio_Page">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Important Notes: "
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         i) ஒரு அளவின் விகிதங்களை a:b  என குறிப்பிடலாம். மேலும் இதனை தசமத்தில் a/b  என குறிப்பிடலாம்."
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="எ.கா:"
+                android:textStyle="bold"
+                android:textColor="@color/design_default_color_primary_dark" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         அதாவது a/b => a:b"
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         5:9 =>  5/9"
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         ii)ஒரு விகிதங்களை அதன் இருபுறமும்  சமமான பூஜ்ஜியம் அல்லாத எண்ணை கொண்டு பெருக்கினால் அதன் மதிப்பு மாறுவதில்லை "
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="எ.கா:"
+                android:textStyle="bold"
+                android:textColor="@color/design_default_color_primary_dark" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         அதாவது  a:b இதில் இருபுறமும் x ஆல் பெருக்கினால் ax:bx (x -பூஜ்ஜியம் அல்லாத எண்)."
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="          7:9 => 2*7 : 2*9 => 14:18"
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         iii)ஒரு விகிதங்களை அதன் இருபுறமும் சமமான பூஜ்ஜியம் அல்லாத எண்ணை கொண்டு வகுத்தல் அதன் மதிப்பு மாறுவதில்லை"
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="எ.கா:"
+                android:textStyle="bold"
+                android:textColor="@color/design_default_color_primary_dark" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         அதாவது  a:b இதில் இருபுறமும் x ஆல் வகுத்தால் அதன் (a/x) : (b/x)"
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         4:2 => இதனை இருபுறமும் 2ஆல் வகுக்க முடியும், 4/2 : 2/2 =>  2:1."
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         iv)இரு விகிதங்கள் சமம் என்றால் அதை proportion என குறிப்பிடலாம்."
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="அதாவது a:b = c:d, இதனை a:b :: c:d எனவும் குறிப்பிடலாம்.இங்கு a, b, c, d ஆகியவை proportion ஆகும்."
+                android:textStyle="bold"
+                android:textColor="@color/design_default_color_primary_dark" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         இங்கு a , d ->extremes .   b , c -> means என அழைக்கப்படுகிறது"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="14sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/formula_ratio_2_0"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="இரு விகிதங்களை ஒப்பிடுதல் :"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         vi)a:b மற்றும் c:d என்ற இரு விகிதங்களை ஒப்பிட்டு எது பெரியது அல்லது சிறியது என கண்டறிய, இரண்டையும் தசம எண்ணாக மாற்றி கண்டறியலாம். a/b  and c/d"
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="எ.கா:"
+                android:textStyle="bold"
+                android:textColor="@color/design_default_color_primary_dark" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         4:2 :: 2:4 இதில் எது பெரியது ?"
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         (4/2) , (2/4) => 2 , 1/2 => இவை இரண்டில் 4:2 விகிதமே பெரியது"
+                android:textColor="@color/D_Green"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

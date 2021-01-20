@@ -1,8 +1,9 @@
 package com.weekenddevelopers.tamilaptitude;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -45,9 +46,10 @@ public class Splash_Screen extends AppCompatActivity {
                 splahs.animate().alpha(1f).setDuration(1500);
                 textViewone.animate().alpha(1f).setDuration(1500);
                 title.animate().alpha(1f).setDuration(1500);
+                weekenddev.animate().alpha(1f).setDuration(1500);
 
 
-                sleep(3000);
+                sleep(2000);
 
 
 

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Example_Pipe_Page">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="1:Two pipes A and B can fill a tank in 36 hours and 45hours respectively. If both the pipes are opened simultaneously, how much time will be taken to fill the tank?"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="இரு குழாய்கள் A மற்றும் B முறையே 36, 45மணிநேரத்தில் ஒரு தொட்டியை நிரப்புகிறது. இரு குழாய்களும் திறக்கப்பட்டால் தொட்டியை நிரப்ப எடுத்துக்கொள்ளும் நேரம் என்ன ?"
+                        android:textColor="@color/D_Green"
+                        android:textSize="18dp" />
+
+
+
+                    <ImageView
+                        android:id="@+id/imageView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/exam_pipe_2_0" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="2: Two pipes can fill a tank in 10hours and 12 hours respectively while a third, pipe empties the full tank in 20 hours. If all the three pipes operate simultaneously, in how much time will the tank be filled?"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="இரு குழாய்கள் முறையே 10, 12 மணிநேரத்தில் ஒரு தொட்டியை நிரப்புகிறது. மற்றொரு குழாய் 20 மணிநேரத்தில் தொட்டியை காலிசெய்கிறது எனில் தொட்டியை நிரப்ப எடுக்கும் நேரம் ?"
+                        android:textColor="@color/D_Green"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/exam_pipe_2_1" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="3: If two pipes function simultaneously, the reservoir will be filled in 12 hours. One pipe fills the reservoir 10 hours faster than the other. How many hours does it take the second pipe to fill the reservoir? "
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="இரு குழாய்கள் ஒரே நேரத்தில் இயங்குகிறது, ஒரு பாத்திரத்தை 12மணிநேரத்தில் நிரப்ப வேண்டும். ஒரு குழாய் மற்றொன்றை விட 10 மணிநேரம் வேகமாக பாத்திரத்தை நிரப்புகிறது எனில் இரண்டாம் குழாய் பாத்திரத்தை நிரப்ப எடுக்கும் நேரம்?"
+                        android:textColor="@color/D_Green"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/exam_pipe_2_2" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="4: A cistern has two taps which fill it in 12 minutes and 15minutes respectively. There is also a waste pipe in the cistern. When all the 3 are opened , the empty cistern is full in 20 minutes. How long will the waste pipe take to empty the full cistern?"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="ஒரு தொட்டியுடன் இணைக்கப்பட்ட இரு குழாய்கள் முறையே 12, 15 நிமிடங்களில் தொட்டியை நிரப்புகிறது. மேலும் இதனுடன் வெளியேற்றும் குழாயும் உள்ளன. அவை மூன்றும் ஒருசேர திறக்கப்பட்டால் 20 நிமிடங்களில் தொட்டி காலியாகிறது, எனில் வெளியேற்றும் குழாய் முழு தொட்டியை காலிசெய்ய எடுக்கும் நேரம்?"
+                        android:textColor="@color/D_Green"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/exam_pipe_2_3" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="5: An electric pump can fill a tank in 3 hours. Because of a leak in ,the tank it took 3(1/2) hours to fill the tank. If the tank is full, how much time will the leak take to empty it ?"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="ஒரு மின்சார குழாய் 3மணிநேரத்தில் ஒரு தொட்டியை நிரப்புகிறது. இதில் கசிவு உள்ளதால் அந்த தொட்டியை நிரப்ப 3 1/2 மணிநேரம் ஆகிறது. அந்த தொட்டி முழுமையாக கசிவடைய எவ்வளவு நேரம் ஆகும்"
+                        android:textColor="@color/D_Green"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/exam_pipe_2_4" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="6. Two pipes can fill a cistern in 14 hours and 16 hours respectively. The pipes are opened simultaneously and it is found that due to leakage in the bottom it took 32 minutes more to fill the cistern.When the cistern is full, in what time will the leak empty it?"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="இரு குழாய்கள் 14, 16 மணிநேரத்தில் ஒரு பாத்திரத்தை நிரப்பும். இரு குழாய்களும் ஒருநேரத்தில் திறக்கப்பட்டால் அந்த தொட்டில் ஒரு கசிவு உள்ளதால், தொட்டியை  நிரப்ப 32 நிமிடம் அதிகம் ஆகிறது. எனில் கசிவு அந்த தொட்டியை காலிசெய்ய ஆகும் நேரம் ?"
+                        android:textColor="@color/D_Green"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/exam_pipe_2_5" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="7: Two pipes A and B can fill a tank in 36 min. and 45 min. respectively. A water pipe C can empty the tank in 30 min. First A and B are opened. after 7 min,C is also opened. In how much time, the tank is full? "
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="இரு குழாய்கள் A, B முறையே 36, 45 நிமிடங்களில் தொட்டியை நிரப்பும், C என்ற குழாய் 30நிமிடத்தில் தொட்டியை காலிசெய்யும். முதல் 7 நிமிடங்களுக்கு A, B மட்டும் திறக்கப்படுகிறது, 7 நிமிடத்திற்கு பின் குழாய் C திறக்கப்படுகிறது எனில் தொட்டியை நிரப்ப ஆகும் நேரம் என்ன ?"
+                        android:textColor="@color/D_Green"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/exam_pipe_2_6" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

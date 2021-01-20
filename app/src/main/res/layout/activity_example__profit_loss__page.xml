@@ -16,7 +16,7 @@
         android:layout_marginRight="5dp"
         android:layout_marginLeft="5dp"
         android:layout_height="wrap_content">
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -52,9 +52,9 @@
                     android:layout_height="wrap_content"
                     app:srcCompat="@mipmap/profitloss_exm_one" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -88,8 +88,8 @@
                     android:layout_height="wrap_content"
                     app:srcCompat="@mipmap/profitloss_exm_two" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -123,8 +123,8 @@
                     android:layout_height="wrap_content"
                     app:srcCompat="@mipmap/profitloss_exm_three" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -158,20 +158,159 @@
                     android:layout_height="wrap_content"
                     app:srcCompat="@mipmap/profitloss_exm_four" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="5.A man earns Rs. 20 on the first day and spends Rs. 15 on the next day. He again earns Rs. 20 on the 3rd day and spends Rs. 15 on the fourth day. If he continues to save like this, how soon will he have Rs. 60 in hand?"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="ஒரு மனிதன் முதல் நாளில் ரூ. 20 சம்பாதித்து அடுத்த நாள் ரூ. 15 செலவு செய்கிறார் . மீண்டும் மூன்றாம் நாள் ரூ. 20 சம்பாதித்து நான்காம் நாள் ரூ. 15  செலவிடுகிறார் . இவ்வாறே அவர் சேமிப்பை செய்கிறார் எனில் ரூ. 60 எவ்வளவு சீக்கிரம் அவரது கையில் இருக்கும்?"
+                    android:textColor="@color/D_Green"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/profitloss_exm_2_0" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="6.A Fruit seller bought 10 boxes of grapes at Rs. 210 each. One box was damaged. He sold the remaining boxes ar Rs. 250 each. Find the profit / loss percentage"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="ஒரு பழ வியாபாரி 10 பொட்டி திராச்சைகளை ஒரு பெட்டிக்கு ரூ. 210 வீதம் வாங்கினார். அதில் ஒரு பெட்டி திராச்சை அழுகி விடுகிறது. மீதமுள்ள பெட்டிகளை ஒரு பெட்டிக்கு ரூ. 250 என்ற விலைக்கு விற்கிறார் எனில் இலாப / நட்ட சதவீதம்  என்ன?"
+                    android:textColor="@color/D_Green"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/profitloss_exm_2_1" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="7.An article is marked 50% above the cost price upon the production price and a discount of 40% is allowed. Then the gain or loss Percentage is"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="ஒரு பொருள் அதன் உற்பத்தி விலையிலிருந்து 50% அதிகமாக விற்பனை விலை குறிக்கப்படுகிறது. மேலும் அதில் 40% தள்ளுபடி அறிவித்தால் அவருக்கு லாப / நட்ட  சதவீதம்"
+                    android:textColor="@color/D_Green"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/profitloss_exm_2_2" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="8.The marked price of an article is 20% more than its cost price. A discount of 10%is given. After discount the price is Rs. 518.40 What is the cost price? "
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="ஒரு பொருளின் அடக்க விலையைவிட  குறித்த விலையானது 20% அதிகம். 10% தள்ளுபடி தரப்படுகிறது. தள்ளுபடிக்கு பின் பொருளின் விலை ரூ.518.40, எனில் அப்பொருளின் அடக்க விலை என்ன?"
+                    android:textColor="@color/D_Green"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/profitloss_exm_2_3" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
         <Space
             android:layout_width="match_parent"
             android:layout_height="100dp" />
 
     </LinearLayout>
     </ScrollView>
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
-        app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-5376812679381678/1065768227"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

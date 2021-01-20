@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="6"
-    android:background="@mipmap/apti_bc"
+    android:background="@drawable/background_main"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
@@ -26,7 +26,7 @@
             android:textStyle="bold" />
     </RelativeLayout>
 
-    <android.support.v7.widget.GridLayout
+    <androidx.gridlayout.widget.GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -37,144 +37,173 @@
         app:columnCount="2"
         app:rowCount="2">
 
-        <android.support.v7.widget.CardView
+        <androidx.gridlayout.widget.GridLayout
+
             android:layout_margin="10dp"
-            app:cardCornerRadius="8dp"
+
             app:layout_column="0"
             app:layout_row="0">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imageView2"
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                >
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:onClick="onformulahome"
-                    app:layout_column="0"
-                    app:layout_row="0"
-                    app:srcCompat="@drawable/formula_new" />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="5dp"
-                    android:text="சூத்திரம்"
-                    android:textAlignment="center"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:onClick="onformulahome"
+                        app:layout_column="0"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/formula_new" />
 
-        <android.support.v7.widget.CardView
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Formula"
+                        android:textSize="18dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp"
             app:layout_column="1"
             app:layout_row="0">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imageView3"
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                >
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:onClick="onexamplehome"
-                    app:layout_column="0"
-                    app:layout_row="0"
-                    app:srcCompat="@drawable/example_new" />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="5dp"
-                    android:text="உதாரணம்"
-                    android:textAlignment="center"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:onClick="onexamplehome"
+                        app:layout_column="0"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/example_new" />
 
-        <android.support.v7.widget.CardView
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Examples"
+                        android:textSize="18dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp"
             app:layout_column="0"
             app:layout_row="1">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                >
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imageView4"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:onClick="onpracticehome"
-                    app:layout_column="0"
-                    app:layout_row="0"
-                    app:srcCompat="@drawable/practice_new" />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_margin="5dp"
-                    android:text="பயிற்சி"
-                    android:textAlignment="center"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:onClick="onpracticehome"
+                        app:layout_column="0"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/practice_new" />
 
-        <android.support.v7.widget.CardView
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:text="Practice"
+                        android:textSize="18dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp"
             app:layout_column="1"
             app:layout_row="1">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                >
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imageView5"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:onClick="ontesthome"
-                    app:layout_column="0"
-                    app:layout_row="0"
-                    app:srcCompat="@drawable/test_new" />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_margin="5dp"
-                    android:text="தேர்வு"
-                    android:textAlignment="center"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:onClick="ontesthome"
+                        app:layout_column="0"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/test_new" />
 
-    </android.support.v7.widget.GridLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:text="Test"
+                        android:textSize="18dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.gridlayout.widget.GridLayout>
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
-        app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-5376812679381678/1065768227"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <!--    <com.google.android.gms.ads.AdView-->
+    <!--        android:id="@+id/adView"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        app:adSize="BANNER"-->
+    <!--        app:adUnitId="ca-app-pub-5376812679381678/1065768227"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content" />-->
 
 
 </RelativeLayout>

@@ -1,10 +1,13 @@
 package com.weekenddevelopers.tamilaptitude;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.CountDownTimer;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,16 +17,15 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
+
+import com.weekenddevelopers.tamilaptitude.BroadcastReciver.Network_Check;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
 public class Test_Quiz_Page extends AppCompatActivity {
-    public static final long COUNTDOWN_IN_MILLS=40000;
+    public long COUNTDOWN_IN_MILLS=45000;
 
     private TextView textView_english_question;
     private TextView textView_tamil_question;
@@ -52,7 +54,7 @@ public class Test_Quiz_Page extends AppCompatActivity {
     static int total;
     static int right;
 
-    AdView adView;
+//    AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,21 +78,24 @@ public class Test_Quiz_Page extends AppCompatActivity {
         Intent intent= getIntent();
         category=intent.getStringExtra(Practice_Home_Page.EXTRA_CATEGORY);
 
-        MobileAds.initialize(this,"ca-app-pub-5376812679381678/1065768227");
-        adView =findViewById(R.id.adView);
-        AdRequest adRequest=new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
+//        MobileAds.initialize(this,"ca-app-pub-5376812679381678/1065768227");
+//        adView =findViewById(R.id.adView);
+//        AdRequest adRequest=new AdRequest.Builder().build();
+//        adView.loadAd(adRequest);
 
         Test_QuizDbHelper dbHelper=new Test_QuizDbHelper(this);
         questionList=dbHelper.getAllQuestions(category);
         questionCountTotal=questionList.size();
+//        COUNTDOWN_IN_MILLS = COUNTDOWN_IN_MILLS * questionCountTotal;
+        timeLeftInMillis=COUNTDOWN_IN_MILLS * questionCountTotal;
+        startCountDown();
         Log.d("questionCountTotal", String.valueOf(questionCountTotal));
         Collections.shuffle(questionList);
         showNextQuestion();
         btn_confirm_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(check()) {
                 if (!answered){
                     if(rb1.isChecked()||rb2.isChecked()||rb3.isChecked()||rb4.isChecked()){
                         checkAnswer();
@@ -102,10 +107,24 @@ public class Test_Quiz_Page extends AppCompatActivity {
                 else {
                     showNextQuestion();
                 }
+            }else
+                {
+                    Network_Check.isNetworkconnected(Test_Quiz_Page.this);
+                }
+
             }
         });
     }
     private int score;
+
+    private boolean check(){
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo ni = cm.getActiveNetworkInfo();
+
+        return ni != null && ni.isConnected();
+
+
+    }
 
     private void checkAnswer(){
         answered=true;
@@ -142,10 +161,10 @@ public class Test_Quiz_Page extends AppCompatActivity {
         }
 
         if (questionCounter<questionCountTotal){
-            btn_confirm_next.setText("Next");
+            btn_confirm_next.setText("Next-->>>");
         }
         else {
-            btn_confirm_next.setText("Finish");
+            btn_confirm_next.setText("-->>> Finish <<<--");
         }
     }
 
@@ -170,7 +189,7 @@ public class Test_Quiz_Page extends AppCompatActivity {
             textView_question_count.setText("Question :"+ questionCounter+"/"+questionCountTotal);
             answered=false;
             btn_confirm_next.setText("Confirm");
-            timeLeftInMillis=COUNTDOWN_IN_MILLS;
+//            timeLeftInMillis=COUNTDOWN_IN_MILLS;
             startCountDown();
         }
         else {
@@ -192,6 +211,7 @@ public class Test_Quiz_Page extends AppCompatActivity {
                 timeLeftInMillis=0;
                 updateCountDownText();
                 checkAnswer();
+                result();
 
             }
         }.start();

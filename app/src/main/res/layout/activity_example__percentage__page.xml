@@ -16,7 +16,7 @@
         android:layout_marginRight="5dp"
         android:layout_marginLeft="5dp"
         android:layout_height="wrap_content">
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -45,9 +45,9 @@
                     android:layout_height="wrap_content"
                     app:srcCompat="@mipmap/percentage_exm_one" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -81,8 +81,8 @@
                     android:layout_height="wrap_content"
                     app:srcCompat="@mipmap/percentage_exm_two" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -107,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:text="இருவருக்கு இடையேயான தேர்தலில், 75% வாக்காளர்கள் தங்கள் வாக்கை பதிவு செய்துவிட்டனர், அதில் 2% வாக்குகள் செல்லாதவைகளாக முடிவுசெய்யப்பட்டன. இத்தேர்தலில் ஒரு வாக்காளர் 9261 வாக்குகளை பெற்றார் இது பதிவான செல்லத்தக்க வாக்குகளில் 75 % ஆகும். மொத்த வாக்குகளை கண்டறி:"
+                    android:text="இருவருக்கு இடையேயான தேர்தலில், 75% வாக்காளர்கள் தங்கள் வாக்கை பதிவு செய்துவிட்டனர், அதில் 2% வாக்குகள் செல்லதவைகளாக முடிவுசெய்யப்பட்டன. இத்தேர்தலில் ஒரு வாக்காளர் 9261 வாக்குகளை பெற்றார் இது பதிவான செல்லத்தக்க வாக்குகளில் 75 % ஆகும். மொத்த வாக்குகளை கண்டறி:"
                     android:textColor="@color/D_Green"
                     android:textSize="18dp" />
 
@@ -116,8 +116,8 @@
                     android:layout_height="wrap_content"
                     app:srcCompat="@mipmap/percentage_exm_three" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -151,8 +151,8 @@
                     android:layout_height="wrap_content"
                     app:srcCompat="@mipmap/percentage_exm_four" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -186,20 +186,194 @@
                     android:layout_height="wrap_content"
                     app:srcCompat="@mipmap/percentage_exm_five" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="6.Paulson spends 75% of his income. His income is increased by 20% and he increased his expenditures by 10%. Find the Percentage increase in his savings."
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="பால்சன் என்பவர் அவரது வருமானத்தில் 75% செலவு செய்கிறான். அவனது வருமானம் 20% அதிகரிக்கப்படுகிறது. அவன் தனது செலவை 10% அதிகரிக்கிறான் எனில் அவனது சேமிப்பில் எத்தனை விழுக்காடு அதிகரிக்கிறது?"
+                android:textColor="@color/D_Green"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/percentage_exm_2_0" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="7.What percentage of numbers from 1 to 50 have 0 or 5 in the unit’s digit?"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="1 முதல் 50 வரை உள்ள எண்களின் ஒன்றாம் இலக்கத்தில் 0 அல்லது 5 உள்ள எண்களின் சதவீதம் யாது?"
+                    android:textColor="@color/D_Green"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/percentage_exm_2_1" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="8.The Percentage of literacy in a village is 49%. Find the number of illiterates in the village, if the population is 7600 "
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="ஒரு கிராமத்தில் உள்ள மொத்த மக்கள் தொகை 7600. அதில் கல்வி அறிவு பெற்றவர்கள் 49% எனில் கல்வி அறிவு பெறாதவர்களின்  எண்ணிக்கை யாது?"
+                android:textColor="@color/D_Green"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/percentage_exm_2_2" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="9. In a class of 45 students, 9 students were absent on a particular day. What percentage of the students were present?"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="ஒரு குறிப்பிட்ட நாளில், 45 மாணவர்கள் உள்ள ஒரு வகுப்பில் 9 மாணவர்கள் வருகை தரவில்லை எனில், வருகை தந்த மாணவர்களின் சதவீதம்  காண்க?"
+                    android:textColor="@color/D_Green"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/percentage_exm_2_3" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="10.Raman salary’s was decreased by 50% and subsequently increased by 50%. How much percent does he lose?
+"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="ராமனின் வருமானம் 50 சதவீதம் குறைக்கப்படுகிறது மற்றும் பின்னர் 50% உயர்த்தப்படுகிறது எனில் அவர் இழந்த சதவீதம் என்ன ?"
+                    android:textColor="@color/D_Green"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/percentage_exm_2_4" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
         <Space
             android:layout_width="match_parent"
             android:layout_height="100dp" />
 
     </LinearLayout>
     </ScrollView>
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
-        app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-5376812679381678/1065768227"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
 
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>

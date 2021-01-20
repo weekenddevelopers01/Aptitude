@@ -7,14 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".Splash_Screen">
 
-    <android.support.v7.widget.AppCompatImageView
+    <ImageView
         android:layout_width="wrap_content"
         android:id="@+id/thirukural"
         android:src="@mipmap/thirukural"
         android:layout_centerInParent="true"
         android:layout_height="wrap_content" />
 
-    <android.support.v7.widget.AppCompatImageView
+    <ImageView
         android:id="@+id/weekendlogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
         android:layout_below="@id/textview_one"
         android:layout_centerHorizontal="true"
         android:alpha="0"
-        android:src="@mipmap/logo" />
+        app:srcCompat="@mipmap/logo" />
 
     <TextView
         android:id="@+id/title"

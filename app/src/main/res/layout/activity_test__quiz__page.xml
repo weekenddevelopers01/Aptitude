@@ -12,7 +12,7 @@
 
     <TextView
         android:id="@+id/text_view_score"
-        android:layout_below="@id/adView"
+        android:layout_below="@id/banner_Ad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
@@ -23,7 +23,7 @@
     <TextView
         android:id="@+id/text_view_question_count"
         android:layout_width="wrap_content"
-        android:layout_below="@+id/adView"
+        android:layout_below="@+id/banner_Ad"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:text="Question : 1/X"
@@ -101,9 +101,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/text_view_timmer"
+        android:textColor="#000000"
         android:layout_marginTop="10dp"
+        android:textStyle="bold"
         android:text="Confirm"
-        android:textSize="14dp" />
+        android:textSize="20dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -123,14 +125,13 @@
         android:text="00:00"
         android:textSize="30dp" />
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-5376812679381678/1065768227"
+    <com.mopub.mobileads.MoPubView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_Ad"
+
         android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_alignParentTop="true"/>
 
 
 </RelativeLayout>
